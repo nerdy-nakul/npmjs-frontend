@@ -28,6 +28,5 @@ Explore the live version of the project: [NPM JS Package Explorer](https://npmjs
 
 ## Images
 
-![image](https://github.com/user-attachments/assets/ff49817c-9632-4fd3-abfb-eda89471efd9)
-![image](https://github.com/user-attachments/assets/006de522-4945-4cd0-93a6-6d3cf366b830)
-![image](https://github.com/user-attachments/assets/abfdf152-b48e-48e1-ae48-97137a0b486d)
+![image](https://github.com/user-attachments/assets/ff49817c-9632-4fd3-abfb-eda89471efd9) ![image](https://github.com/user-attachments/assets/006de522-4945-4cd0-93a6-6d3cf366b830)
+![image](https://github.com/user-attachments/assets/abfdf152-b48e-48e1-ae48-97137a0b486d) ![image](https://github.com/user-attachments/assets/87b25272-02dc-4161-a44e-671ac8119c9a)
