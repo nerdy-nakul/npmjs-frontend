@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 
 function SearchPage() {
   const [results, setResults] = useState([]);
@@ -104,14 +104,14 @@ function SearchPage() {
                   key={pkg.package.name}
                   className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
                 >
-                  <a
-                    href={`/package/${pkg.package.name}`}
+                  <Link
+                    to={`/package/${pkg.package.name}`}
                     className="hover:underline text-indigo-600"
                   >
                     <h3 className="text-xl font-semibold text-indigo-600 hover:text-indigo-800">
                       {pkg.package.name}
                     </h3>
-                  </a>
+                  </Link>
                   <p className="text-gray-700 mt-1">
                     {pkg.package.description}
                   </p>

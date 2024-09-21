@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom"; // Import Link from react-router-dom
 import axios from "axios";
 
 function PackageDetail() {
@@ -120,9 +120,10 @@ function PackageDetail() {
               const versionInfo = packageData.versions[version];
               return (
                 <li key={version} className="border-b pb-2">
-                  <a href={`/package/${name}/${version}`} className="text-blue-500 hover:underline">
+                  {/* Replace <a> with <Link> for internal navigation */}
+                  <Link to={`/package/${name}/${version}`} className="text-blue-500 hover:underline">
                     {version}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
@@ -130,7 +131,9 @@ function PackageDetail() {
 
           <div className="flex justify-between items-center mt-4">
             <button
-              className={`px-3 py-1 rounded bg-blue-500 text-white ${currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""}`}
+              className={`px-3 py-1 rounded bg-blue-500 text-white ${
+                currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
+              }`}
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
             >
@@ -140,7 +143,9 @@ function PackageDetail() {
               Page {currentPage} of {totalPages}
             </span>
             <button
-              className={`px-3 py-1 rounded bg-blue-500 text-white ${currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""}`}
+              className={`px-3 py-1 rounded bg-blue-500 text-white ${
+                currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
+              }`}
               onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
               disabled={currentPage === totalPages}
             >

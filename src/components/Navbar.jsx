@@ -106,7 +106,7 @@ const Navbar = () => {
         </button>
 
         {suggestions.length > 0 && (
-          <ul className="absolute left-0 w-full md:w-[73rem] top-16 z-10 bg-white border mt-3 shadow-lg overflow-y-auto">
+          <ul className="absolute left-40 w-full md:w-[73rem] top-16 z-10 bg-white border mt-3 shadow-lg overflow-y-auto">
             {suggestions.map((suggestion, index) => (
               <li
                 key={index}
