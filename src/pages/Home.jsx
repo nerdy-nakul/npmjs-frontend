@@ -63,7 +63,7 @@ const Home = () => {
             {categories.map((category, index) => (
               <div
                 key={index}
-                className="py-2 px-4 border text-md font-medium bg-white rounded hover:bg-red-200 cursor-pointer text-center"
+                className="py-2 px-4 border text-sm font-medium bg-white rounded hover:bg-red-200 cursor-pointer text-center"
               >
                 {category}
               </div>
